@@ -58,7 +58,7 @@ venv.bak/
 *.xlsx
 *.xls
 *.json
-.db
+*.db
 data/
 datasets/
 
