@@ -8,8 +8,6 @@ SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 
 
-print(f"🔑 JWT_SECRET_KEY loaded: {SECRET_KEY is not None}")
-print(f"🔑 SECRET_KEY value: {SECRET_KEY[:10] if SECRET_KEY else 'NONE'}...")
 
 if not SECRET_KEY:
     raise ValueError("JWT_SECRET_KEY environment variable is not set!")
